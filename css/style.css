@@ -1,0 +1,50 @@
+body {
+  font-family: Lobster;
+}
+
+.btn-circle {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: .7em;
+  line-height: 1.42;
+  border-radius: 25px;
+}
+
+.jumbotron h1 {
+  font-size: 2.5em;
+}
+
+.jumbotron {
+  margin-top: -2%;
+  background: transparent;
+}
+
+.well:first-of-type,
+.well:last-of-type {
+  background: 0;
+  border: 0;
+  box-shadow: none;
+}
+
+.fill {
+  background: rgba(200, 200, 200, .25);
+  overflow: hidden;
+}
+
+.fill > .after {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  background: #55ff44;
+  top: 100%;
+  left: 0;
+  z-index: -10;
+  transition: all .4s ease;
+}
+
+#break {
+  color: red;
+  visibility: hidden;
+}

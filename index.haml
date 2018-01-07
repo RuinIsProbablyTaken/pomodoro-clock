@@ -1,0 +1,48 @@
+%html
+  %head
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1.0"}
+
+    %link{:rel => "stylesheet", :type => "text/css", :href => "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "https://fonts.googleapis.com/css?family=Lobster"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "css/style.css"}
+
+  %body
+    .container-fluid.text-center
+      %h1.page-header Pomodoro Clock
+      <br>
+      %h2#break Break! 
+      .jumbotron.jumbotron-fluid
+        .row
+          .col-xs-12.col-sm-6.col-sm-offset-3.col-md-4.col-md-offset-0.col-lg-2.col-lg-offset-3.well
+            %h1#breakTime 5
+            .row
+              .col-xs-6
+                %button.btn.btn-default.btn-circle#addBreak 
+                  %span.glyphicon.glyphicon-plus
+              .col-xs-6
+                %button.btn.btn-default.btn-circle#subtractBreak
+                  %span.glyphicon.glyphicon-minus
+            %h4 Break Time      
+          .col-xs-12.col-sm-6.col-sm-offset-3.col-md-4.col-lg-2.col-md-offset-0.well.fill
+            .after
+            %h1#time 25
+            %button.btn.btn-default.col-xs-6#start
+              %span.glyphicon.glyphicon-play
+              %span.glyphicon.glyphicon-pause
+              Start
+            %button.btn.btn-default.col-xs-6#reset
+              %span.glyphicon.glyphicon-repeat
+              Reset
+          .col-xs-12.col-sm-6.col-sm-offset-3.col-md-4.col-lg-2.col-md-offset-0.well
+            %h1#timer 25
+            .row
+              .col-xs-6
+                %button.btn.btn-default.btn-circle.btn-circle#addSession
+                  %span.glyphicon.glyphicon-plus
+              .col-xs-6
+                %button.btn.btn-default.btn-circle.btn-circle#subtractSession
+                  %span.glyphicon.glyphicon-minus
+            %h4 Session Time 
+
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"}
+    %script{:src => "js/main.js"}
