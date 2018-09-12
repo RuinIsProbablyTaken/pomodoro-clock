@@ -1,2 +1,2 @@
-# pomodoro-clock
-FCC challenge
+# Pomodoro clock
+This app was one of FCC challenges and was intended for learning purposes only. It was done in a pair and it allowed me to have insightful discussions regarding the app design, technologies used, and steps to take in order to prevent errors and getting stuck.
